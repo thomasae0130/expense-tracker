@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>      
+        </nav>
+    </header>
+    <main>
+        <h1>Expense Tracker</h1>
+        <form id="expenseForm">
+            <legend for="name">Salary (this month)</legend>
+            <input type="text" name="salary" >
+
+            <div id="billsContainer">
+                <div class="billEntry">
+                    <legend for="billName">Bill</legend>
+                    <input type="text" name="billName" required>
+
+                    <legend for="cost">Cost</legend>
+                    <input type="text" name="cost" required>
+                </div>
+            </div>
+
+            <button type="button" id="addBill">Add Another Bill</button>
+            <button id="submit" type="submit">Add Expense</button>
+        </form>
+        <section>
+            <div>
+                <h2>Stats</h2>
+                
+                <h3>Salary: $<span id="salary">0</span></h3>
+
+                <h3>Month Cost: $<span id="Month">0</span></h3>
+
+                <h3>Total Cost: $<span id="total">0</span></h3>
+
+                <h3>Savings/mo: $<span id="savingMonth">0</span></h3>
+
+                <h3>Saved to date: $<span id="std">0</span></h3>
+
+                <h3>Percentage saved: <span id="percentage">0</span>%</h3>
+            </div>
+
+            <div class="list">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Bill Name</th>
+                            <th>Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
